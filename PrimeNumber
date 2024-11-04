@@ -41,18 +41,17 @@ class CalculateNumber : PrimeNumber
 {
     public bool IsPrime(int number)
     {
-        if (number <= 1)
+        if (number<=1)
         {
             return false;
         }
         for (int i = 1; i < number; i++)
         {
-            if (number % i == 0)
+            if(number % i == 0)
             {
-                return true;
+                return false;
             }
             return true;
         }
     }
 }
-

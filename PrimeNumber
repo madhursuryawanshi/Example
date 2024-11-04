@@ -1,0 +1,49 @@
+Using system;
+{
+    public class PrimeNumber
+{
+
+    public bool IsPrime(int K)
+    {
+        bool PrimeNumber = true;
+        for (int i = 2; i < K; i++)
+        {
+            int temp = k % i;
+            if (temp == 0)
+            {
+                isprime = false;
+                break;
+            }
+        }
+        return isprime
+}
+}
+}
+
+Public class Programm
+{
+    public static void Main(string[] args)
+    {
+        PrimeEasy Prime = new PrimeEasy();
+        Console.WriteLine("prime no to 30");
+        for (int i = 0; i < 30; i++)
+        {
+            bool check = PrimeNumber.isPrime(i);
+            if (check)
+            {
+                Console.WriteLine("prime number" + i);
+            }
+            int d = 7;
+            bool u = PrimeNumber.isPrime(d);
+            Console.WriteLine("primeNumbers" + u);
+        }
+    }
+}
+
+class CalculateNumber : PrimeNumber
+{
+
+
+
+
+}

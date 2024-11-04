@@ -2,33 +2,31 @@ Using system;
 {
     public class PrimeNumber
 {
-
     public bool IsPrime(int K)
     {
-        bool PrimeNumber = true;
+        bool IsPrime = true;
         for (int i = 2; i < K; i++)
         {
             int temp = k % i;
             if (temp == 0)
             {
-                isprime = false;
+                IsPrime = false;
                 break;
             }
         }
-        return isprime
+        return IsPrime
+    }
 }
 }
-}
-
 Public class Programm
 {
     public static void Main(string[] args)
     {
         PrimeEasy Prime = new PrimeEasy();
-        Console.WriteLine("prime no to 30");
+        Console.WriteLine("prime no up to 30");
         for (int i = 0; i < 30; i++)
         {
-            bool check = PrimeNumber.isPrime(i);
+            bool check = PrimeNumber.IsPrime(i);
             if (check)
             {
                 Console.WriteLine("prime number" + i);
@@ -39,11 +37,22 @@ Public class Programm
         }
     }
 }
-
 class CalculateNumber : PrimeNumber
 {
-
-
-
-
+    public bool IsPrime(int number)
+    {
+        if (number <= 1)
+        {
+            return false;
+        }
+        for (int i = 1; i < number; i++)
+        {
+            if (number % i == 0)
+            {
+                return true;
+            }
+            return true;
+        }
+    }
 }
+
